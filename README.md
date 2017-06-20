@@ -4,9 +4,11 @@ This is a programming assignment of making message processing application.
 
 The assignment implemented using Akka and provides JSON API for sending messages.
 
-PUT request `/single-sale` expects OneOffSale object in the request body {"name": "apples", "cost" : 0.9}
+PUT request `/single-sale` expects OneOffSale object in the request body {"productType": "apples", "cost" : 0.9}
 
-PUT request `/multiple-sale` expects BunchSale object in the request body {"name": "apples", "cost" : 0.9, "itemsCount": 50}
+PUT request `/multiple-sale` expects BunchSale object in the request body {"productType": "apples", "cost" : 0.9, "itemsCount": 50}
+
+PUT request `/adjust-price` expects AdjustPrice object in the request body {"productType": "apples", "operation" : "Add", "value": 5}
 
 GET request `/report`
 
