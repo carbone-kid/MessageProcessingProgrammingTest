@@ -1,0 +1,159 @@
+
+C:\Projects\akka_test\github\3\MessageProcessingProgrammingTest>mvn test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building message-processing-technical-test 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ message-processing-technical-test ---
+[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ message-processing-technical-test ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to C:\Projects\akka_test\github\3\MessageProcessingProgrammingTest\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ message-processing-technical-test ---
+[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Projects\akka_test\github\3\MessageProcessingProgrammingTest\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ message-processing-technical-test ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Projects\akka_test\github\3\MessageProcessingProgrammingTest\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ message-processing-technical-test ---
+[INFO] Surefire report directory: C:\Projects\akka_test\github\3\MessageProcessingProgrammingTest\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.sfirsov.processing.HttpApiTest
+[INFO] [06/20/2017 01:38:44.245] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: oranges; Multiply 2.86
+[INFO] [06/20/2017 01:38:44.292] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Single sale: apples; cost: 994.36
+[INFO] [06/20/2017 01:38:44.294] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Multiply 1.51
+[INFO] [06/20/2017 01:38:44.306] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Multiple sale: carrots; count: 68; cost: 565.43
+[INFO] [06/20/2017 01:38:44.308] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: oranges; count: 64; cost: 919.36
+[INFO] [06/20/2017 01:38:44.310] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 90; cost: 306.35
+[INFO] [06/20/2017 01:38:44.311] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: oranges; count: 41; cost: 525.39
+[INFO] [06/20/2017 01:38:44.314] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Multiple sale: melons; count: 21; cost: 719.05
+[INFO] [06/20/2017 01:38:44.316] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Subtract 2.06
+[INFO] [06/20/2017 01:38:44.318] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] adjust price of: oranges; Multiply 1.99
+[INFO] [06/20/2017 01:38:44.318] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.318] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Begin report for the last 10 messages:
+[INFO] [06/20/2017 01:38:44.318] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: apples; number of transactions: 1; number of sails: 1; total value: 994.36
+[INFO] [06/20/2017 01:38:44.318] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: carrots; number of transactions: 1; number of sails: 68; total value: 38449.10
+[INFO] [06/20/2017 01:38:44.319] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: melons; number of transactions: 1; number of sails: 21; total value: 15100.04
+[INFO] [06/20/2017 01:38:44.319] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: oranges; number of transactions: 4; number of sails: 105; total value: 226869.49
+[INFO] [06/20/2017 01:38:44.319] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: potatoes; number of transactions: 3; number of sails: 90; total value: 27385.61
+[INFO] [06/20/2017 01:38:44.319] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] end of report
+[INFO] [06/20/2017 01:38:44.319] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.320] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 45; cost: 385.20
+[INFO] [06/20/2017 01:38:44.322] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Add 4.45
+[INFO] [06/20/2017 01:38:44.324] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: potatoes; cost: 940.31
+[INFO] [06/20/2017 01:38:44.327] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Single sale: melons; cost: 968.08
+[INFO] [06/20/2017 01:38:44.332] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: apples; cost: 166.21
+[INFO] [06/20/2017 01:38:44.335] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 44; cost: 535.38
+[INFO] [06/20/2017 01:38:44.338] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] adjust price of: carrots; Multiply 1.17
+[INFO] [06/20/2017 01:38:44.340] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: carrots; cost: 394.79
+[INFO] [06/20/2017 01:38:44.342] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Single sale: carrots; cost: 624.38
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Multiply 4.22
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Begin report for the last 10 messages:
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: apples; number of transactions: 1; number of sails: 1; total value: 166.21
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: carrots; number of transactions: 3; number of sails: 2; total value: 1019.17
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: melons; number of transactions: 1; number of sails: 1; total value: 968.08
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: potatoes; number of transactions: 5; number of sails: 90; total value: 281514.34
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] end of report
+[INFO] [06/20/2017 01:38:44.344] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.346] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: carrots; Multiply 2.17
+[INFO] [06/20/2017 01:38:44.348] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] adjust price of: carrots; Multiply 3.94
+[INFO] [06/20/2017 01:38:44.351] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: melons; Subtract 2.01
+[INFO] [06/20/2017 01:38:44.353] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 89; cost: 951.71
+[INFO] [06/20/2017 01:38:44.354] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: potatoes; cost: 166.28
+[INFO] [06/20/2017 01:38:44.356] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] adjust price of: carrots; Subtract 3.83
+[INFO] [06/20/2017 01:38:44.358] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: melons; count: 71; cost: 684.55
+[INFO] [06/20/2017 01:38:44.360] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: apples; Multiply 2.30
+[INFO] [06/20/2017 01:38:44.361] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Multiply 4.12
+[INFO] [06/20/2017 01:38:44.363] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Single sale: apples; cost: 174.92
+[INFO] [06/20/2017 01:38:44.363] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.363] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Begin report for the last 10 messages:
+[INFO] [06/20/2017 01:38:44.364] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: apples; number of transactions: 2; number of sails: 1; total value: 174.92
+[INFO] [06/20/2017 01:38:44.364] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: melons; number of transactions: 2; number of sails: 71; total value: 48603.07
+[INFO] [06/20/2017 01:38:44.364] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] Product: potatoes; number of transactions: 3; number of sails: 90; total value: 349795.84
+[INFO] [06/20/2017 01:38:44.364] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] end of report
+[INFO] [06/20/2017 01:38:44.364] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.366] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Single sale: potatoes; cost: 596.41
+[INFO] [06/20/2017 01:38:44.369] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 84; cost: 154.56
+[INFO] [06/20/2017 01:38:44.371] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Multiple sale: apples; count: 46; cost: 367.90
+[INFO] [06/20/2017 01:38:44.372] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 79; cost: 433.32
+[INFO] [06/20/2017 01:38:44.373] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Subtract 3.41
+[INFO] [06/20/2017 01:38:44.375] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: oranges; cost: 223.09
+[INFO] [06/20/2017 01:38:44.376] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Single sale: carrots; cost: 244.53
+[INFO] [06/20/2017 01:38:44.378] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: potatoes; cost: 504.74
+[INFO] [06/20/2017 01:38:44.379] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: potatoes; Multiply 3.34
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/saleActor] Single sale: apples; cost: 546.76
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Begin report for the last 10 messages:
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: apples; number of transactions: 2; number of sails: 47; total value: 17470.00
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: carrots; number of transactions: 1; number of sails: 1; total value: 244.53
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: oranges; number of transactions: 1; number of sails: 1; total value: 223.09
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] Product: potatoes; number of transactions: 6; number of sails: 165; total value: 281955.54
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] end of report
+[INFO] [06/20/2017 01:38:44.381] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.383] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Single sale: carrots; cost: 911.52
+[INFO] [06/20/2017 01:38:44.384] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: apples; count: 14; cost: 526.14
+[INFO] [06/20/2017 01:38:44.386] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Multiple sale: potatoes; count: 13; cost: 561.88
+[INFO] [06/20/2017 01:38:44.387] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: carrots; count: 88; cost: 213.99
+[INFO] [06/20/2017 01:38:44.389] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Multiple sale: melons; count: 10; cost: 379.49
+[INFO] [06/20/2017 01:38:44.390] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: oranges; cost: 180.09
+[INFO] [06/20/2017 01:38:44.393] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] adjust price of: oranges; Multiply 1.48
+[INFO] [06/20/2017 01:38:44.395] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Single sale: melons; cost: 457.43
+[INFO] [06/20/2017 01:38:44.397] [SalesProcessingTest-akka.actor.default-dispatcher-2] [akka://SalesProcessingTest/user/saleActor] Single sale: carrots; cost: 560.02
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] adjust price of: oranges; Add 3.25
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-6] [akka://SalesProcessingTest/user/saleActor] Stop accepting new orders
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Begin report for the last 10 messages:
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product: apples; number of transactions: 1; number of sails: 14; total value: 7365.96
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product: carrots; number of transactions: 3; number of sails: 90; total value: 20516.35
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product: melons; number of transactions: 2; number of sails: 11; total value: 4252.30
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product: oranges; number of transactions: 3; number of sails: 1; total value: 269.18
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product: potatoes; number of transactions: 1; number of sails: 13; total value: 7304.42
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] end of report
+[INFO] [06/20/2017 01:38:44.400] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.421] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+[INFO] [06/20/2017 01:38:44.421] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Begin final report:
+[INFO] [06/20/2017 01:38:44.421] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: apples; price was Multiply at 2.30
+[INFO] [06/20/2017 01:38:44.421] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: carrots; price was Multiply at 1.17
+[INFO] [06/20/2017 01:38:44.421] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: carrots; price was Multiply at 2.17
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: carrots; price was Multiply at 3.94
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: carrots; price was Subtract at 3.83
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: melons; price was Subtract at 2.01
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: oranges; price was Multiply at 2.86
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: oranges; price was Multiply at 1.99
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: oranges; price was Multiply at 1.48
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: oranges; price was Add at 3.25
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Multiply at 1.51
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Subtract at 2.06
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Add at 4.45
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Multiply at 4.22
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Multiply at 4.12
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Subtract at 3.41
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] Product type: potatoes; price was Multiply at 3.34
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] end of report
+[INFO] [06/20/2017 01:38:44.422] [SalesProcessingTest-akka.actor.default-dispatcher-5] [akka://SalesProcessingTest/user/reportActor] ---------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.698 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.726 s
+[INFO] Finished at: 2017-06-20T01:38:44+01:00
+[INFO] Final Memory: 19M/224M
+[INFO] ------------------------------------------------------------------------
